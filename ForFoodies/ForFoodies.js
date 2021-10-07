@@ -12,4 +12,4 @@ if(i>icons.length){
 }else{
     icon.nextElementSibling.classList.add('change')
 }
-},3000)
+},1500)
