@@ -9,6 +9,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
 </head>
 <body>
+    <!-- Navbar (onclick toggle navebar (hidden/unhide)) -->
+    <navbar class="target">
+        <a href="#" class="navbar-link">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="#" class="navbar-link">
+            <i class="fas fa-utensils"></i>
+            <span>Meals</span>
+        </a>
+        <a href="#" class="navbar-link">
+            <i class="fas fa-hamburger"></i>
+            <span>Burger</span>
+        </a>
+        <a href="#" class="navbar-link">
+            <i class="fas fa-pizza-slice"></i>
+            <span>Pizza</span>
+        </a>
+        <a href="#" class="navbar-link">
+            <i class="fas fa-blender-phone"></i>
+            <span>Contact</span>
+        </a>
+
+    </navbar>
+    <div class="menu target" target>
+
+    </div>
+    <!-- NavBar ends -->
     <div class="container">
         <!-- Section1 sliding icons-->
         <section class="section-1">
@@ -31,7 +59,7 @@
         <!-- End of Section1 -->
 
         <!-- Section 2 3D cards with transition effects buttons etc -->
-          <div class="section-2">
+          <section class="section-2">
               <h1 class="section-heading">Popular Meals</h1>
               <div class="cards-container">
                   <div class="card">
@@ -50,8 +78,99 @@
                     <button class="card-btn">Order Now</button>
                 </div>
               </div>
-          </div>
+          </section>
         <!-- Section 2 ends -->
+        <!-- Section 3 Gallery -->
+        <section class="section-3">
+            <h1 class="section-heading">
+                Gallery
+            </h1>
+            <div class="gallery">
+                <a href='#' class="gallery-link" title="Order Now">
+                <img src="Images/gallery-img-1.jpg" class="food-img"/>
+                <h3 class="food-name">Pancakes</h3>
+                <p class="food-description">
+                    Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Eligendi iure commodi 
+                    labore est expedita incidunt culpa harum, 
+                    distinctio atque.
+                </p>
+            </a>
+                <a href='#' class="gallery-link" title="Order Now">
+                <img src="Images/gallery-img-2.jpeg" class="food-img"/>
+                <h3 class="food-name">Humus</h3>
+                <p class="food-description">
+                    Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Eligendi iure commodi 
+                    labore est expedita incidunt culpa harum, 
+                    distinctio atque.
+                </p>
+            </a>
+                <a href='#' class="gallery-link" title="Order Now">
+                <img src="Images/gallery-img-3.jpg" class="food-img"/>
+                <h3 class="food-name">Burger</h3>
+                <p class="food-description">
+                    Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Eligendi iure commodi 
+                    labore est expedita incidunt culpa harum, 
+                    distinctio atque.
+                </p>
+            </a>
+                <a href='#' class="gallery-link" title="Order Now">
+                <img src="Images/gallery-img-4.jpg" class="food-img"/>
+                <h3 class="food-name">Lasagna</h3>
+                <p class="food-description">
+                    Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Eligendi iure commodi 
+                    labore est expedita incidunt culpa harum, 
+                    distinctio atque.
+                </p>
+            </a>
+                <a href='#' class="gallery-link" title="Order Now">
+                <img src="Images/gallery-img-5.jpg" class="food-img"/>
+                <h3 class="food-name">Turky Crossant</h3>
+                <p class="food-description">
+                    Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Eligendi iure commodi 
+                    labore est expedita incidunt culpa harum, 
+                    distinctio atque.
+                </p>
+            </a>
+                <a href='#' class="gallery-link" title="Order Now">
+                <img src="Images/gallery-img-6.jpg" class="food-img">
+                <h3 class="food-name">Chicken Bougette </h3>
+                <p class="food-description">
+                    Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Eligendi iure commodi 
+                    labore est expedita incidunt culpa harum, 
+                    distinctio atque.
+                </p>
+            </a>
+            </div>
+        </section>
+        
+        <!-- Section 3 ends -->
+        <!-- Section 4 Footer -->
+        <section class="section-4">
+            <div class="section-4-text">
+                <div class="section-4-heading">
+                    Sign me up!
+                </div>
+                <div class="section-4-paragraph">
+                    Be the first one to know about new launches.
+                </div>
+               
+
+            </div>
+            <form class="signup-form">
+                <input type="email" class="signup-form-input" placeholder="Enter Your Email"/>
+                <button class="signup-form-btn" type='submit'>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+</form>
+<p class="copyright">Code_Blooded&copy;All Rights Reserved</p>
+        </section>
+        <!-- Section 4 ends -->
     </div>
    <script src="ForFoodies.js"></script> 
 </body>
