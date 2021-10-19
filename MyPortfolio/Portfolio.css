@@ -20,7 +20,7 @@ html{
     font-size: 62.5%;
 }
 body{
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 .container{
     width:100%;
@@ -56,6 +56,7 @@ body{
     left:calc(50% - 75vw);
     border-radius:40%;
     animation: rotate 30s infinite;
+    overflow-x: hidden;
 }
 .floating-bg::before{
     content:'';
@@ -67,6 +68,7 @@ body{
     position: absolute;
     border-radius:35%;
     animation: rotate 30s infinite;
+    overflow-x: hidden;
 }
 @keyframes rotate{
     0%{
@@ -165,11 +167,16 @@ box-shadow: -0.1rem -0.1rem  0.2rem rgb(177, 174, 174);
 .section-4{
     width: 100%;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    background-color:#111;
+   
     
-    justify-content: space-evenly;
+    background-color:#111;
+    overflow-x: hidden;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position:relative;
+    align-items: center;
 }
 .projects-wrap{
 width:100%;
@@ -332,12 +339,14 @@ justify-content: space-evenly;
     position: relative;
     top:2vh;
     color:grey;
+    font-size: 2vh;
 }
 .spa1{
     position: relative;
     top:1vh;
     margin-right:3vh;
     color:grey;
+    font-size: 2vh;
 }
 .spa1:visited{
     color:grey;
@@ -365,3 +374,12 @@ justify-content: space-evenly;
     background-color: #fff;
 }
 /* End of Section 2 */
+@media(max-width:1366px){
+    .project-cards{
+        width:30rem !important;
+        height:40rem !important;
+    }
+    body{
+        overflow-x: hidden;
+    }
+}
